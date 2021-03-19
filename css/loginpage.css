@@ -1,0 +1,117 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+/*Styles for Logo Image*/
+.img{
+    border:10px solid #00f;
+    padding: 25px;
+    background-color: blue;
+    border-radius: 600%;
+}
+
+.topleft{
+    color:#ffff;
+    font-size: 80%;
+    position:absolute;
+    top:100px;
+    left: 126px;
+}
+
+.topleft button{
+    background-color: blue;
+    color:#ffff;
+    font-size: 90%;
+    border-color: #fff;
+    border-radius: 16px;
+    border-style: solid;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 4px 2px;
+
+}
+.center-span{
+    float: right;
+    padding: 0 40px 300px 0;
+    margin: 0 auto;
+}
+
+fieldset{
+    float:inherit;
+}
+
+.fieldset label{
+    font-size: 90px;
+}
+
+form input{
+    display: block;
+    width: 100%;
+    padding: 5px;
+    border: 1px solid grey;
+    border-radius: 16px;
+    
+}
+
+form button{
+    background-color: blue;
+    color:#ffff;
+    font-size: 90%;
+    border-radius: 16px;
+    border-style: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 10px;
+}
+ .button:hover{
+     background-color: #f1f1f1;
+     color:blue;
+ }
+
+
+h6,button{
+    width: 75%;
+    text-align: center;
+    display: inline-block;
+}
+
+
+.social{
+    background-color: #fff;
+    float: right;
+    color: #000;
+    padding: 300px 0 0 50px ;
+}
+
+button{
+    position: inherit;
+    font-size: 30%;
+    position: center;
+    padding: 50;
+    margin-top: ;
+    background-color: #0000;
+    border: solid #0000;
+    border-radius: ;
+    margin-bottom: ;
+} 
+
+div>fieldset>h2{
+    text-align: left;
+    float: center;
+}
+
+label[for="email"]{
+    float: right;
+    text-align:left;
+   /* display:block;*/
+}
+
+
+label[for="password"]{
+    float: right;
+    position: relative;
+    right:20vw;
+}
+
+
