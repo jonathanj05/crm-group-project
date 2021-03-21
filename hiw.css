@@ -94,6 +94,7 @@ button:hover, .altbutton:hover {
     .nav-item{
         font-size: 0.75em;
     }
+}
 
     .button{
         font-size: 0.75em !important;
@@ -123,4 +124,6 @@ button:hover, .altbutton:hover {
          padding:8px 12px;
         }
       }
+    
       
+/*comment purely to test pushing to git*/
