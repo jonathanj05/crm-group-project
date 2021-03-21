@@ -21,10 +21,6 @@ img {
 
 }
 
-/*.thirdrow h4 {
-    padding-top: 80px;
-}*/
-
 .centereddiv {
     margin: auto;
 }
@@ -48,12 +44,6 @@ img {
 .hiw {
     font-size: 0.90em;
 }
-
-/*.payimg {
-    max-height: 363px;
-}*/
-
-
 
 .collect div {
     padding: 0;
@@ -88,13 +78,17 @@ img {
 
 
 
+/*On-hover effect for the sign up/sign in buttons across the page, so that it raises up and generates a slight shadow beneath it*/
 
-button:hover {
+button:hover, .altbutton:hover {
     box-shadow: 0 0.7em 0.7em -0.4em #7f5cff;
     transform: translateY(-0.25em);
     transition: 0.15s;
     cursor: pointer;
 }
+
+/*Basic resizing of fonts depending on screen sizes*/
+
 
 @media (max-width: 992px) {
     .nav-item{
@@ -130,10 +124,3 @@ button:hover {
         }
       }
       
-@media (min-width: 1200px) {
-    .btn {
-        padding:10px 16px;
-        font-size:18px;
-        }
-      }
-
