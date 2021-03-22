@@ -1,86 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="Description" content="Enter your description here"/>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-<link rel="stylesheet" href="css/signup.css">
-<title>Sign Up</title>
+	<title>Sign Up Form</title>
+	<link rel="stylesheet" type="text/css" href="css/signup.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-    <div class="container">
-        <div class="myCard">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="myLeftSide"> 
-                        <img src="/CRM-SignUp-AssetFiles/Group 10@2x.png" class= "rounded"  height="100%" width= "50%" alt="illustrated lady at computer">
-                        <form class="myForm text-center">
-                            <header>Sign Up</header>
-                            <div class="form-group">
-                                <i class="fas fa-user"></i>
-                                <input class="myInput" type="text" placeholder="Username" id="username" required> 
-                            </div>
-
-                            <div class="form-group">
-                                <i class="fas fa-envelope"></i>
-                                <input class="myInput" placeholder="Email" type="text" id="email" required> 
-                            </div>
-
-                            <div class="form-group">
-                                <i class="fas fa-lock"></i>
-                                <input class="myInput" type="password" id="password" placeholder="Password" required> 
-                            </div>
-
-                            <div class="form-group">
-                                <label>
-                                    <input id="check_1" name="check_1"  type="checkbox" required><small> I read and agree to Terms & Conditions</small></input> 
-                                    <div class="invalid-feedback">You must check the box.</div>
-                                </label>
-                            </div>
-
-                            <input type="submit" class="button" value="CREATE ACCOUNT">
-                            <p>O Sign up with social platforms</p>
-                            <div class="social-media">
-                                <a href="#" class="social-icon">
-                                  <i class="fab fa-facebook-f"></i>
-                                </a>
-                                <a href="#" class="social-icon">
-                                  <i class="fab fa-twitter"></i>
-                                </a>
-                                <a href="#" class="social-icon">
-                                  <i class="fab fa-google"></i>
-                                </a>
-                                <a href="#" class="social-icon">
-                                  <i class="fab fa-linkedin-in"></i>
-                                </a>
-                            </div>
-                        </form>
+	<div class="container">
+		<div class="img">
+			<img src="/CRM-SignUp-AssetFiles/Group 10@2x.png" class= "floatRight"  height="80%" width= "130%" alt="illustrated lady at computer">
+		</div>
+		<div class="SignUp-content">
+			<form action="signuppage.html">
+				<h2 class="title">Sign Up</h2>
+           		<div class="input-div username">
+           		   <div class="i">
+           		   		<i class="fas fa-user" style="color:black"></i>
+           		   </div>
+           		   <div class="div">
+           		   		<h5>Username</h5>
+           		   		<input class="input" type="text" id="username"required >
+           		   </div>
+           		</div>
+                <div class= "input-div email"> 
+                    <div class="i">
+                        <i class= "fas fa-envelope" style="color:black"></i>
+                    </div>
+                    <div class="div">
+                        <h5> Email</h5>
+                        <input class="input" type ="Email"  >
                     </div>
                 </div> 
-                                
-              
-                
-            </div>
-                            
-                           
-            </div>
-                                
-                    
+           		<div class="input-div pass">
+           		   <div class="i"> 
+           		    	<i class="fas fa-lock" style="color:black"></i>
+           		   </div>
+           		   <div class="div">
+           		    	<h5>Password</h5>
+           		    	<input class="input" type="password" >
+            	   </div>
+            	</div>
+                <input type="submit" class="button" value=" Sign Up">
+                <p>Or Sign up with Social Platforms</p>
+                <div class= "social-media">
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-facebook fa-3x" ></i>
+                      </a>
+                      <a href="#" class="social-icon">
+                        <i class="fab fa-twitter fa-3x"></i>
+                      </a>
+                      <a href="#" class="social-icon">
+                        <i class="fab fa-google fa-3x"></i>
+                      </a>
+                      <a href="#" class="social-icon">
+                        <i class="fab fa-linkedin-in fa-3x"></i>
+                      </a>
+                </div>
+            </form>
         </div>
-                
     </div>
-            
-        
-</div>
-        
-
-      
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
- 
 </body>
 </html>

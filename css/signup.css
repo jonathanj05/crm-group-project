@@ -1,125 +1,155 @@
 *{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
- 
+
 body{
-    background: #fbf3ff;
+    font-family: sans-serif;
+    overflow: hidden;
+	
 }
- 
+
+/*layout*/
 .container{
-    position: absolute;
-    max-width: 800px;
-    height: 500px;
-    margin: auto;
-    top:50%;
-    left:50%;
-    transform: translate (-50%, -50%);
-}
- 
-
- 
-.myLeftSide{
-    position: relative;
-    background: white;
-    border-radius:25px;
-    height:100%;
-    padding: 25px;
-    padding-left:50px;
+    width: 120vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap :7rem;
+    padding: 0 2rem;
 }
 
-.myLeftSide header{
-    color:black;
-    font-size:20px;
-}
-.row{
-    height:100%
+
+.img{
+	display: flex;
+	justify-content:flex-end;
+	align-items: center;
+    width:700px;
+	float:right;
 }
 
-.myCard {
-    position: relative;
-    background: white;
-    height: 100%;
-    border-radius: 25px;
-    -webkit-box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.7);
-    -moz-box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.7);
-    box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.7);
-} 
-  
-  
-.box {
-    position: relative;
-    margin: 20px;
-    margin-bottom: 100px;
-} 
-  
-.myLeftSide .myInput {
-    width: 230px;
-    border-radius: 25px;
-    padding: 10px;
-    padding-left: 50px;
-    border: none;
-    -webkit-box-shadow: 0px 10px 49px -14px rgba(0, 0, 0, 0.7);
-    -moz-box-shadow: 0px 10px 49px -14px rgba(0, 0, 0, 0.7);
-    box-shadow: 0px 10px 49px -14px rgba(0, 0, 0, 0.7);
-}
-  
-.myLeftSide .myInput:focus {
-    outline: none;
-} 
-  
-.myForm {
-    position: relative;
-    margin-top: 50px;
-} 
-  
-.myLeftSide .button {
-    color: #fff;
-    width: 230px;
-    border: none;
-    border-radius: 25px;
-    padding: 10px;
-    -webkit-box-shadow: 0px 10px 41px -11px rgba(0, 0, 0, 0.7);
-    -moz-box-shadow: 0px 10px 41px -11px rgba(0, 0, 0, 0.7);
-    box-shadow: 0px 10px 41px -11px rgba(0, 0, 0, 0.7);
-} 
-  
-.myLeftSide .button:focus {
-    outline: none;
-} 
-  
-.myLeftSide .fas {
-    position: relative;
-    color:white;
-    left: 36px;
-} 
-  
-.button_out {
-    background: transparent;
-    color: #fff;
-    width: 120px;
-    border: 2px solid#fff;
-    border-radius: 25px;
-    padding: 10px;
-    -webkit-box-shadow: 0px 10px 49px -14px rgba(0, 0, 0, 0.7);
-    -moz-box-shadow: 0px 10px 49px -14px rgba(0, 0, 0, 0.7);
-    box-shadow: 0px 10px 49px -14px rgba(0, 0, 0, 0.7);
-} 
-  
-.button_out:hover {
-    border: 2px solid#eecbff;
-} 
-
-.button_out:focus {
-    outline: none;
-}
 img{
-    max-width: 50%;
-    height:auto;
-    display: block;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    margin-left: 280px;
-    background-color: #eee;
+	min-width:300px
+}
+
+
+.SignUp-content{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	text-align: center;
+}
+
+form{
+	width: 360px;
+}
+
+
+.SignUp-content h2{
+	margin: 70px 0;
+	color: #333;
+	font-size: 2.9rem;
+}
+/* format the username  email and password boxes*/
+.SignUp-content .input-div{
+	position: relative;
+    display: grid;
+    grid-template-columns: 7% 93%;
+    margin: 50px 0;
+    padding: .5px 0;
+    border: solid gray;
+	border-radius:30px;
+}
+
+.SignUp-content .input-div.username{
+	margin-top: 0;
+}
+
+/* controls icons in the username email password*/
+.i{
+	color: #d9d9d9;
+	display: flex;
+	justify-content: center;
+	align-items:center;
+}
+ 
+/*sizing textboxes*/
+.input-div > div{
+    position: relative;
+	height: 45px;
+}
+
+/* positions/format the words inside username email pass*/
+.input-div > div > h5{
+	position: absolute;
+	left: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+	color:lightgray ;
+	font-size: 18px;
+	transition: .3s;
+    opacity: 0.5;
+}
+
+/* makes entire textbox fill the designated space*/
+.input-div > div > input{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	border: none;
+	outline: none;
+	background: none;
+	padding: 0.5rem 0.7rem;
+	font-size: 1.2rem;
+	color: #555;
+	font-family: 'poppins', sans-serif;
+}
+
+.input-div.password{
+	margin-bottom: 4px;
+}
+/*social media icons*/
+a{
+	display: block;
+	text-align:inherit;
+	text-decoration: none;
+	color: #999;
+	font-size: 15px;
+	transition: .3s;
+}
+
+/*sign up button*/
+.button{
+	width: 150px;
+    height: 40px;
+    color:white;
+    border-radius:20px;
+    background-color:royalblue;
+    font-size:19px;
+    Font-style:sans-serif;
+    text-align: center;
+	margin-top: 4px;
+    margin-bottom:4px;
+}
+
+p{
+	margin-top:20px;
+	margin-bottom: 20px;
+	font-weight:bold;
+}
+
+.social-icon{
+    Background: url(/CRM-SignIn/Path\ 236.png) no-repeat fixed center;
+    width: 78px;
+    height: 74px;
+    border: none;
+    display:inline-block;
+    color:royalblue;
+	position:inherit;
+	margin-bottom:inherit;
+	margin-top:10px;
+	
 }
