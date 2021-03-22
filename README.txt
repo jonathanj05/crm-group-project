@@ -6,7 +6,12 @@ Eric P:
 **navbar initial design, but was fine tuned via collaboration with Dimitri
 
 Dimitri:
+Landing page 
 
 Rashel:
+Sign up page
 
-Jonathan
+
+Jonathan: 
+
+Sign in page
