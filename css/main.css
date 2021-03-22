@@ -1,0 +1,165 @@
+a {
+    color: black;
+}
+.free-btn {
+    margin-left: 10px;
+
+}
+
+.headerimg {
+    max-height: 550px;
+}
+
+
+
+img {
+    padding: 0;
+}
+
+.firstrow, .thirdrow, .fourthrow {
+    display: flex;
+
+}
+
+
+.fieldset{
+    border: solid 1px #eee;
+    height: 100px;
+    text-align: center;
+    padding: px;
+    margin: 100px;
+    height: 100px;
+    width: 100px;
+}
+
+.computer {
+    margin: 20px;
+    padding-right: 100px;
+}
+
+.checkmark {
+    margin: 20px;
+}
+
+
+.centereddiv {
+    margin: auto;
+}
+
+.alttext{
+    color: gray
+}
+
+.subtext, .footersubtext {
+    font-size: 0.6em;
+}
+
+.subtext div{
+    padding: 0;
+}
+
+.spacerdot img {
+    max-height: 5px;
+}
+
+.lp {
+    font-size: 0.90em;
+}
+
+.graphs {
+    height: 100px;
+    width: 100px;
+}
+
+.calender {
+    height:100px;
+    width: 100px;
+}
+
+.checkmark {
+    height: 100px;
+    width: 100px;
+}
+
+.collect div {
+    padding: 0;
+    color: white;
+}
+
+.collect-text {
+    background-color: blue;
+}
+
+.footerdiv {
+    background-color: blue;
+    color: white;
+}
+
+.collect .thirdrow .fillertext {
+    padding: 15px;
+}
+.collect .fourthrow .fillertext {
+    padding: 15px;
+
+}
+
+.foottextdiv div:nth-of-type(3){
+    padding-bottom: 25px;
+}
+
+.foottextdiv>div:nth-of-type(1){
+    padding-top: 25px;
+}
+
+
+
+
+
+button:hover {
+    box-shadow: 0 0.7em 0.7em -0.4em #7f5cff;
+    transform: translateY(-0.25em);
+    transition: 0.15s;
+    cursor: pointer;
+}
+
+@media (max-width: 992px) {
+    .nav-item{
+        font-size: 0.75em;
+    }
+
+    .button{
+        font-size: 0.75em !important;
+    }
+
+    .hiw {
+        font-size: 0.8em;
+    }
+
+@media (max-width: 768px) {
+    .btn {
+        font-size:11px;
+        padding:4px 6px;
+        }
+    }
+      
+@media (min-width: 768px) {
+    .btn {
+        font-size:12px;
+        padding:6px 12px;
+        }
+      }
+      
+@media (min-width: 992px) {
+    .btn {
+        font-size:14px;
+         padding:8px 12px;
+        }
+      }
+      
+@media (min-width: 1200px) {
+    .btn {
+        padding:10px 16px;
+        font-size:18px;
+        }
+      }
+
